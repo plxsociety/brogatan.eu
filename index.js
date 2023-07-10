@@ -22,6 +22,8 @@ function init() {
 					colz.push(column)
 					const th = document.createElement('th')
 					th.innerText = column
+					let className = heading.label.replace(/\s+/g, '-').toLowerCase()
+					th.className = className
 					tr.appendChild(th)
 				}
 			})
